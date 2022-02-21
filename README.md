@@ -7,11 +7,11 @@
 *pdfxcb* splits a PDF using pages with barcodes as delimiters or after every Nth page.
 
 
-## Split based on barcodes -- how it works
+## Splitting a PDF using barcodes
 
 Any page in the input PDF containing a barcode is potentially a "barcode sheet". Each barcode sheet, and those pages succeeding that page and preceding the next barcode sheet, comprise a single set of pages output as a discrete PDF file.
 
-Each output file is named, by default, as `<encoded string>-<index>.pdf` where <encoded string> is the content encoded by the barcode on the barcode sheet and <index> is the page number of the barcode sheet relative to the input PDF. The page number is formatted as a three-digit page number (e.g., 001 or 023) unless the page number exceeds 999. Page numbering begins at one.
+Each output file is named, by default, as `<encoded string>-<index>.pdf` where `<encoded string>` is the content encoded by the barcode on the barcode sheet and `<index>` is the page number of the barcode sheet relative to the input PDF. The page number is formatted as a three-digit page number (e.g., 001 or 023) unless the page number exceeds 999. Page numbering begins at one.
 
 ### Example
 
