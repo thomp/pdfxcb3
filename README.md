@@ -17,7 +17,7 @@ Each output file is named, by default, as `<encoded string>-<index>.pdf` where <
 
 `pdfxcb -r 0.2 0 1 0.3 -l 0 -d ./outputdir -f ./pdfxcb.log /path/to/scans.pdf`
 
-Ivoking with `-r` causes the program to attempt to split prior to each page with a barcode in the specified page region. The arguments following the `-r` flag specify two points as x1 y1 x2 y2. The values are percentages (0 to 1.0) where (0,0) represents the top left corner of the page. These points define the scan region as a rectangle.
+Invoking with `-r` causes the program to attempt to split prior to each page with a barcode in the specified page region. The arguments following the `-r` flag specify two points as x1 y1 x2 y2. The values are percentages (0 to 1.0) where (0,0) represents the top left corner of the page. These points define the scan region as a rectangle.
 
 The above example scans roughly the upper right third of each page in the input file, `/path/to/scans.pdf`. The output files are written to `./outputdir`. A log is generated at `./pdfxcb.log`.
  
